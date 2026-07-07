@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Aldo Domínguez Contreras</title>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #34495e;
+            --background-color: #f8f9fa;
+            --text-color: #333333;
+            --accent-color: #3498db;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        /* Cabecera y Fotografía */
+        header {
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        .profile-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--secondary-color);
+            margin-right: 30px;
+        }
+
+        .header-content h1 {
+            margin: 0;
+            color: var(--primary-color);
+            font-size: 2.5em;
+        }
+
+        .header-content h2 {
+            margin: 5px 0 15px 0;
+            color: var(--accent-color);
+            font-size: 1.2em;
+            font-weight: normal;
+        }
+
+        .contact-info {
+            font-size: 0.9em;
+            color: var(--secondary-color);
+        }
+
+        /* Secciones */
+        section {
+            margin-bottom: 30px;
+        }
+
+        h3 {
+            color: var(--primary-color);
+            border-bottom: 1px solid #eeeeee;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            font-size: 1.2em;
+            letter-spacing: 1px;
+        }
+
+        /* Contenido de las secciones */
+        .job, .education {
+            margin-bottom: 20px;
+        }
+
+        .job-title, .edu-title {
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+
+        .job-date, .edu-date {
+            float: right;
+            font-size: 0.9em;
+            color: #7f8c8d;
+        }
+
+        .job-company, .edu-school {
+            font-style: italic;
+            color: #7f8c8d;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            margin-top: 5px;
+            padding-left: 20px;
+        }
+
+        /* Habilidades Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-category {
+            background: var(--background-color);
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .skill-category h4 {
+            margin-top: 0;
+            color: var(--secondary-color);
+            font-size: 1em;
+        }
+
+        /* Responsivo */
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .profile-photo {
+                margin: 0 0 20px 0;
+            }
+            .job-date, .edu-date {
+                float: none;
+                display: block;
+                margin-bottom: 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="aldo1.jpeg" alt="Foto de Aldo Domínguez" class="profile-photo">
+            <div class="header-content">
+                <h1>ALDO DOMÍNGUEZ CONTRERAS</h1>
+                <h2>Ingeniero en Sistemas Computacionales — Analista IT & Negocios</h2>
+                <div class="contact-info">
+                    aldo.domincon@gmail.com | Xalapa, Veracruz, México | linkedin.com/in/aldo-dominguez-con
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <h3>Perfil Profesional</h3>
+            <p>Profesional con más de 10 años de experiencia en administración, supervisión, análisis de datos y cooperación internacional. Actualmente en transición hacia Tecnologías de la Información, cursando el 7° semestre de Ingeniería en Sistemas Computacionales. Habilidades técnicas en Python, SQL y desarrollo web, respaldadas por proyectos reales desplegados en Azure. Perfil diferenciado por la combinación de visión de negocio, liderazgo de equipos y competencias técnicas en software.</p>
+        </section>
+
+        <section>
+            <h3>Experiencia Laboral Destacada</h3>
+            <div class="job">
+                <span class="job-title">Gerente General</span>
+                <span class="job-date">2022 – Actualidad</span>
+                <div class="job-company">Restaurante El Jefe | Xalapa, Ver.</div>
+                <ul>
+                    <li>Dirección integral del negocio: operaciones, personal, finanzas y atención al cliente.</li>
+                    <li>Implementación de procesos de control de inventario y reportes financieros periódicos.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <span class="job-title">Jefe de Departamento de Estadísticas</span>
+                <span class="job-date">2019 – 2020</span>
+                <div class="job-company">Policía Estatal C4 | Veracruz</div>
+                <ul>
+                    <li>Administración y análisis de bases de datos estadísticas de seguridad pública.</li>
+                    <li>Elaboración de reportes geo-estadísticos con herramientas SIG: ArcGIS y Antigravity.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h3>Proyectos Técnicos</h3>
+            <div class="job">
+                <span class="job-title">Sistema de Gestión de Laboratorio Clínico</span>
+                <ul>
+                    <li><strong>Tecnologías:</strong> Python, PostgreSQL, Azure, API REST, PDF.</li>
+                    <li>Sistema completo para registro de pacientes, solicitud y seguimiento de estudios clínicos hasta entrega de resultados.</li>
+                    <li>Backend en Python con base de datos PostgreSQL; desplegado exitosamente en Microsoft Azure.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h3>Educación</h3>
+            <div class="education">
+                <span class="edu-title">Ingeniería en Sistemas Computacionales (7° Semestre en curso)</span>
+                <span class="edu-date">2022 – Presente</span>
+                <div class="edu-school">Instituto Tecnológico Superior de Xalapa | Xalapa, Ver.</div>
+            </div>
+            <div class="education">
+                <span class="edu-title">Licenciatura en Negocios Internacionales</span>
+                <span class="edu-date">2008 – 2013</span>
+                <div class="edu-school">Universidad | México</div>
+            </div>
+        </section>
+
+        <section>
+            <h3>Habilidades</h3>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Desarrollo y Bases de Datos</h4>
+                    <ul>
+                        <li>Python</li>
+                        <li>SQL / PostgreSQL / SQL Server</li>
+                        <li>JavaScript, HTML / CSS</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Herramientas y Nube</h4>
+                    <ul>
+                        <li>Microsoft Azure</li>
+                        <li>Git / GitHub</li>
+                        <li>VS Code</li>
+                        <li>AWS (Fundamentos)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Negocio y Análisis</h4>
+                    <ul>
+                        <li>Análisis de datos</li>
+                        <li>Gestión de proyectos</li>
+                        <li>Inglés Avanzado C1</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
